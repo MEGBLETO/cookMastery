@@ -3,36 +3,7 @@ import React, {useState, useEffect, useContext} from 'react';
 import styled from 'styled-components/native';
 import LikedContext from '../contexts/Likecontext';
 import { useNavigation } from '@react-navigation/native';
-
-
-const Container = styled.View`
-  flex: 1;
-  background-color: #36454F ;
-`;
-
-const ItemContainer = styled.View`
-  flex-direction: row;
-  align-items: center;
-  padding: 16px;
-`;
-
-const ItemImage = styled.Image`
-  width: 64px;
-  height: 64px;
-  margin-right: 16px;
-`;
-
-const ItemTitle = styled.Text`
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 8px;
-  color: white;
-`;
-
-const ItemText = styled.Text`
-  font-size: 14px;
-  color: white;
-`;
+import { ItemImage, Container, ItemContainer, ItemTitle, ItemText,  } from '../styles/Favorites.style';
 
 export default function FavoritesScreens({}) {
     const navigation = useNavigation()

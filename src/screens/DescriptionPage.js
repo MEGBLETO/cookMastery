@@ -5,44 +5,10 @@ import {useRoute, useNavigation} from '@react-navigation/native';
 import axios from 'axios';
 import {StyledHeartIcon} from '../styles/Welcome.style';
 import LikedContext from '../contexts/Likecontext';
+import { Instructions, Container, Header, IngredientsContainer, IngredientsHeader, IngredientItem } from '../styles/Description.style';
 
-const Container = styled.View`
-  flex: 1;
-  padding: 15px;
-  background-color: #36454f;
-`;
 
-const Header = styled.Text`
-  display: flex;
-  place-items: center;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: white;
-`;
 
-const Instructions = styled.Text`
-  font-size: 16px;
-  margin-top: 20px;
-  color: white;
-`;
-
-const IngredientsContainer = styled.View`
-  margin-top: 20px;
-`;
-
-const IngredientsHeader = styled.Text`
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: white;
-`;
-
-const IngredientItem = styled.Text`
-  font-size: 16px;
-  margin-bottom: 5px;
-  color: white;
-`;
 
 const DescriptionPage = () => {
   const navigation = useNavigation();

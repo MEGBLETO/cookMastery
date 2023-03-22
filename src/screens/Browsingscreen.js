@@ -4,8 +4,8 @@ import {useNavigation} from '@react-navigation/native';
 import {useRoute} from '@react-navigation/native';
 import axios from 'axios';
 import styled from 'styled-components/native';
-import {FlatList} from 'react-native';
 import Entete from '../components/Entete';
+import { MealList, MealItem, MealImage, MealTitle, LoadingIndicator } from '../styles/Browsing.style';
 
 const Browsingscreen = () => {
   const router = useRoute();
@@ -66,38 +66,38 @@ const Browsingscreen = () => {
   );
 };
 
-const PagecontainerWhite = styled.View`
-  flex: 1;
-  background-color: #fff;
-`;
+// const PagecontainerWhite = styled.View`
+//   flex: 1;
+//   background-color: #fff;
+// `;
 
-const MealList = styled(FlatList)`
-  padding: 10px;
-  background-color: #36454F	;
-`;
+// const MealList = styled(FlatList)`
+//   padding: 10px;
+//   background-color: #36454F	;
+// `;
 
-const MealItem = styled.TouchableOpacity`
-  flex: 1;
-  margin: 5px;
-  height: 200px;
-`;
+// const MealItem = styled.TouchableOpacity`
+//   flex: 1;
+//   margin: 5px;
+//   height: 200px;
+// `;
 
-const MealImage = styled.Image`
-  height: 150px;
-  width: 100%;
-  border-radius: 10px;
-`;
+// const MealImage = styled.Image`
+//   height: 150px;
+//   width: 100%;
+//   border-radius: 10px;
+// `;
 
-const MealTitle = styled.Text`
-  font-size: 10px;
-  font-weight: bold;
-  margin-top: 10px;
-  color: white;
-`;
+// const MealTitle = styled.Text`
+//   font-size: 10px;
+//   font-weight: bold;
+//   margin-top: 10px;
+//   color: white;
+// `;
 
-const LoadingIndicator = styled.ActivityIndicator.attrs({
-  size: 'large',
-  color: 'blue',
-})``;
+// const LoadingIndicator = styled.ActivityIndicator.attrs({
+//   size: 'large',
+//   color: 'blue',
+// })``;
 
 export default Browsingscreen;
