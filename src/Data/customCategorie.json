@@ -1,0 +1,58 @@
+[
+    {
+      strCategory: "Beef",
+      imgUrl: "https://images.unsplash.com/photo-1615937691194-97dbd3f3dc29?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+    },
+    {
+      strCategory: "Breakfast",
+      imgUrl: "https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+    },
+    {
+      strCategory: "Chicken",
+      imgUrl: "https://images.unsplash.com/photo-1606728035253-49e8a23146de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+    },
+    {
+      strCategory: "Dessert",
+      imgUrl: "https://images.unsplash.com/photo-1587314168485-3236d6710814?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZGVzc2VydHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60"
+    },
+    {
+      strCategory: "Goat",
+      imgUrl: "https://images.unsplash.com/photo-1452195100486-9cc805987862?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fEdvYXQlMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60"
+    },
+    {
+      strCategory: "Lamb",
+      imgUrl: "https://images.unsplash.com/photo-1570263495075-b8258671743f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGxhbWIlMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60"
+    },
+    {
+      strCategory: "Miscellaneous",
+      imgUrl: "https://plus.unsplash.com/premium_photo-1661720816614-08f41ceb9cc7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fG1peGVkJTIwZm9vZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60"
+    },
+    {
+      strCategory: "Pasta",
+      imgUrl: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBhc3RhfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60"
+    },
+    {
+      strCategory: "Pork",
+      imgUrl: "https://images.unsplash.com/photo-1628294896516-344152572ee8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fFBvcmslMjBmb29kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60"
+    },
+    {
+      strCategory: "Seafood",
+      imgUrl: "https://images.unsplash.com/photo-1606850780554-b55ea4dd0b70?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fHNlYWZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60"
+    },
+    {
+      strCategory: "Side",
+      imgUrl: "https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2lkZSUyMGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60"
+    },
+    {
+      strCategory: "Starter",
+      imgUrl: "https://images.unsplash.com/photo-1532465909-4e0278962a2b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c3RhcnRlciUyMGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60"
+    },
+    {
+      strCategory: "Vegan",
+      imgUrl: "https://images.unsplash.com/photo-1540914124281-342587941389?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2148&q=80"
+    },
+    {
+      strCategory: "Vegetarian",
+      imgUrl: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmVnZXRhcmlhbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60"
+    }
+  ]
