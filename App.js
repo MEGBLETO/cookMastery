@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, {useContext} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -14,26 +14,27 @@ import Homescreen from './src/screens/Homescreen';
 import MainPage from './src/screens/MainPage';
 import Browsingscreen from './src/screens/Browsingscreen';
 import DescriptionPage from './src/screens/DescriptionPage';
-import { LikedContextProvider } from './src/contexts/Likecontext';
+import {LikedContextProvider} from './src/contexts/Likecontext';
+import {InputContextProvider} from './src/contexts/InputContext';
 import FavoritesScreens from './src/screens/FavoritesScreens';
 
 const Stack = createNativeStackNavigator();
 
 function App() {
-
-
   return (
-    <LikedContextProvider>
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={Homescreen} />
-        <Stack.Screen name="main" component={MainPage} />
-        <Stack.Screen name="browse" component={Browsingscreen} />
-        <Stack.Screen name="details" component={DescriptionPage} />
-        <Stack.Screen name="favorite" component={FavoritesScreens} />
-      </Stack.Navigator>
-    </NavigationContainer>
-    </LikedContextProvider>
+    <InputContextProvider>
+      <LikedContextProvider>
+        <NavigationContainer>
+          <Stack.Navigator>
+            <Stack.Screen name="Home" component={Homescreen} />
+            <Stack.Screen name="main" component={MainPage} />
+            <Stack.Screen name="browse" component={Browsingscreen} />
+            <Stack.Screen name="details" component={DescriptionPage} />
+            <Stack.Screen name="favorite" component={FavoritesScreens} />
+          </Stack.Navigator>
+        </NavigationContainer>
+      </LikedContextProvider>
+    </InputContextProvider>
   );
 }
 

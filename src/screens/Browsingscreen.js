@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {useNavigation} from '@react-navigation/native';
 import {useRoute} from '@react-navigation/native';
@@ -6,6 +6,7 @@ import axios from 'axios';
 import styled from 'styled-components/native';
 import Entete from '../components/Entete';
 import { MealList, MealItem, MealImage, MealTitle, LoadingIndicator } from '../styles/Browsing.style';
+import InputContext from '../contexts/InputContext';
 
 const Browsingscreen = () => {
   const router = useRoute();
@@ -13,6 +14,9 @@ const Browsingscreen = () => {
   const category = router.params?.category;
   const [isLoading, setIsLoading] = useState(false);
   const [meals, setMeals] = useState([]);
+  const {input, setInput} = useContext(InputContext);
+
+
 
   const getProductBasedOnCategories = async () => {
     try {
@@ -28,6 +32,23 @@ const Browsingscreen = () => {
       setIsLoading(false);
     }
   };
+
+  const getSearched = async() =>{
+    try {
+          if(input != null){
+            const {data} = await axios.get(
+                `https://themealdb.com/api/json/v1/1/search.php?s=${input}`
+              );
+              setMeals(data.meals);
+          }
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+  useEffect(()=>{
+         getSearched()
+  },[input])
 
   useEffect(() => {
     navigation.setOptions({
@@ -65,39 +86,5 @@ const Browsingscreen = () => {
     </SafeAreaView>
   );
 };
-
-// const PagecontainerWhite = styled.View`
-//   flex: 1;
-//   background-color: #fff;
-// `;
-
-// const MealList = styled(FlatList)`
-//   padding: 10px;
-//   background-color: #36454F	;
-// `;
-
-// const MealItem = styled.TouchableOpacity`
-//   flex: 1;
-//   margin: 5px;
-//   height: 200px;
-// `;
-
-// const MealImage = styled.Image`
-//   height: 150px;
-//   width: 100%;
-//   border-radius: 10px;
-// `;
-
-// const MealTitle = styled.Text`
-//   font-size: 10px;
-//   font-weight: bold;
-//   margin-top: 10px;
-//   color: white;
-// `;
-
-// const LoadingIndicator = styled.ActivityIndicator.attrs({
-//   size: 'large',
-//   color: 'blue',
-// })``;
 
 export default Browsingscreen;
