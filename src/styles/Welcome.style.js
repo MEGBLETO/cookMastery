@@ -84,6 +84,6 @@ export const StyledText = styled.Text`
 
 export const StyledHeartIcon = styled(HeartIcon)`
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 3px;
+  right: 70px;
 `;

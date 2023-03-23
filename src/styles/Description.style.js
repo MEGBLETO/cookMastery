@@ -9,14 +9,22 @@ export const Container = styled.View`
   background-color: #36454f;
 `;
 
-export const Header = styled.Text`
+
+export const Header = styled.View`
   display: flex;
-  place-items: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+`;
+
+export const HeaderText = styled.Text`
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 20px;
   color: white;
 `;
+
+
 
 export const Instructions = styled.Text`
   font-size: 16px;

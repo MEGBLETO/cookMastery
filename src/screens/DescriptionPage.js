@@ -5,7 +5,7 @@ import {useRoute, useNavigation} from '@react-navigation/native';
 import axios from 'axios';
 import {StyledHeartIcon} from '../styles/Welcome.style';
 import LikedContext from '../contexts/Likecontext';
-import { Instructions, Container, Header, IngredientsContainer, IngredientsHeader, IngredientItem } from '../styles/Description.style';
+import { Instructions, Container, Header, IngredientsContainer, IngredientsHeader, IngredientItem, HeaderText } from '../styles/Description.style';
 
 
 
@@ -69,7 +69,7 @@ const DescriptionPage = () => {
         ListHeaderComponent={
           <>
             <Header>
-              {meal?.strMeal}
+             <HeaderText>{meal?.strMeal}</HeaderText> 
               {clicked ? (
                 <StyledHeartIcon
                   name="heart"
